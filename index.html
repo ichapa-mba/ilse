@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ilse Chapa — Growth & GTM Leader</title>
+<meta name="description" content="Ilse Chapa — Founding Growth Lead. Twice built acquisition systems from zero. Growth & Strategy, GTM, Customer Acquisition.">
+<style>
+  :root {
+    --ink: #1a1e1c;
+    --ink-soft: #4a524d;
+    --paper: #faf9f6;
+    --paper-alt: #f1efe9;
+    --accent: #2f5d47;
+    --accent-soft: #e4ece7;
+    --line: #ddd9d0;
+    --max: 880px;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    color: var(--ink);
+    background: var(--paper);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--accent); }
+  .wrap { max-width: var(--max); margin: 0 auto; padding: 0 28px; }
+
+  /* NAV */
+  nav {
+    position: sticky; top: 0; z-index: 10;
+    background: rgba(250,249,246,0.92);
+    backdrop-filter: blur(6px);
+    border-bottom: 1px solid var(--line);
+  }
+  nav .wrap { display: flex; justify-content: space-between; align-items: center; padding: 16px 28px; }
+  nav .name { font-weight: 700; letter-spacing: 0.02em; font-size: 15px; }
+  nav ul { list-style: none; display: flex; gap: 26px; margin: 0; padding: 0; }
+  nav a { text-decoration: none; color: var(--ink-soft); font-size: 14px; font-weight: 500; }
+  nav a:hover { color: var(--accent); }
+  @media (max-width: 640px) { nav ul { display: none; } }
+
+  /* HERO */
+  header.hero { padding: 90px 0 70px; }
+  header.hero .eyebrow {
+    text-transform: uppercase; letter-spacing: 0.14em; font-size: 12px;
+    color: var(--accent); font-weight: 700; margin-bottom: 18px;
+  }
+  header.hero h1 { font-size: 44px; line-height: 1.15; margin: 0 0 18px; letter-spacing: -0.01em; }
+  header.hero p.lede { font-size: 19px; color: var(--ink-soft); max-width: 620px; margin: 0 0 34px; }
+  .btn-row { display: flex; gap: 14px; flex-wrap: wrap; }
+  .btn {
+    display: inline-block; padding: 12px 22px; border-radius: 6px;
+    text-decoration: none; font-size: 14px; font-weight: 600; transition: transform 0.15s ease;
+  }
+  .btn:hover { transform: translateY(-1px); }
+  .btn-primary { background: var(--accent); color: #fff; }
+  .btn-secondary { background: transparent; color: var(--ink); border: 1px solid var(--line); }
+
+  /* STATS STRIP */
+  .stats {
+    background: var(--accent-soft); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);
+    padding: 36px 0;
+  }
+  .stats .wrap { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; text-align: center; }
+  .stat .num { font-size: 26px; font-weight: 700; color: var(--accent); }
+  .stat .label { font-size: 12.5px; color: var(--ink-soft); margin-top: 4px; }
+  @media (max-width: 640px) { .stats .wrap { grid-template-columns: repeat(2, 1fr); } }
+
+  section { padding: 70px 0; }
+  section.alt { background: var(--paper-alt); }
+  h2.section-title {
+    font-size: 13px; text-transform: uppercase; letter-spacing: 0.14em;
+    color: var(--accent); font-weight: 700; margin: 0 0 12px;
+  }
+  h3.section-head { font-size: 28px; margin: 0 0 26px; letter-spacing: -0.01em; }
+  p.about-body { font-size: 17px; color: var(--ink-soft); max-width: 720px; }
+  p.about-body + p.about-body { margin-top: 16px; }
+
+  .tags { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 26px; }
+  .tag { background: #fff; border: 1px solid var(--line); padding: 7px 14px; border-radius: 999px; font-size: 13px; color: var(--ink-soft); }
+
+  /* CASE STUDIES */
+  .case { border: 1px solid var(--line); background: #fff; border-radius: 12px; padding: 34px; margin-bottom: 28px; }
+  .case-top { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 8px; margin-bottom: 6px; }
+  .case-role { font-size: 20px; font-weight: 700; }
+  .case-meta { font-size: 13px; color: var(--ink-soft); }
+  .case-org { font-size: 14px; color: var(--accent); font-weight: 600; margin-bottom: 18px; }
+  .case p { color: var(--ink-soft); font-size: 15.5px; margin: 0 0 10px; }
+  .case ul { margin: 14px 0 0; padding-left: 20px; }
+  .case li { color: var(--ink-soft); font-size: 15.5px; margin-bottom: 9px; }
+  .case li strong { color: var(--ink); }
+  .case-stats { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
+  .chip { background: var(--accent-soft); color: var(--accent); font-weight: 700; font-size: 13px; padding: 8px 14px; border-radius: 8px; }
+
+  /* SKILLS */
+  .skills-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+  .skill-col h4 { font-size: 14px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--ink); margin: 0 0 12px; }
+  .skill-col p { color: var(--ink-soft); font-size: 14.5px; margin: 0; }
+  @media (max-width: 700px) { .skills-grid { grid-template-columns: 1fr; } }
+
+  /* EDUCATION */
+  .edu-item { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 6px; padding: 16px 0; border-bottom: 1px solid var(--line); }
+  .edu-item:last-child { border-bottom: none; }
+  .edu-item .deg { font-weight: 600; }
+  .edu-item .sch { color: var(--ink-soft); font-size: 14.5px; }
+
+  /* CONTACT / FOOTER */
+  footer { padding: 70px 0 50px; text-align: center; }
+  footer h3 { font-size: 30px; margin: 0 0 14px; }
+  footer p { color: var(--ink-soft); font-size: 16px; max-width: 480px; margin: 0 auto 30px; }
+  footer .btn-row { justify-content: center; }
+  .fine { margin-top: 50px; font-size: 12.5px; color: #9a978f; }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <div class="name">ILSE CHAPA</div>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#work">Case Studies</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="eyebrow">Founding Growth Lead</div>
+    <h1>I build growth systems from zero — twice, and counting.</h1>
+    <p class="lede">Versatile growth operator who has built acquisition systems from scratch on lean teams with no playbook to inherit — once as a founder, once as the sole growth owner for a multi-market business portfolio. Looking to bring that same versatility to a small, founder-led team.</p>
+    <div class="btn-row">
+      <a class="btn btn-primary" href="#work">See the work</a>
+      <a class="btn btn-secondary" href="https://linkedin.com/in/ilsechapa" target="_blank" rel="noopener">Connect on LinkedIn</a>
+    </div>
+  </div>
+</header>
+
+<div class="stats">
+  <div class="wrap">
+    <div class="stat"><div class="num">$300K/mo</div><div class="label">Revenue built from scratch, Clean Suite</div></div>
+    <div class="stat"><div class="num">32%</div><div class="label">Lift in lead conversion, one quarter</div></div>
+    <div class="stat"><div class="num">95%</div><div class="label">Average account retention, SHI</div></div>
+    <div class="stat"><div class="num">$35M</div><div class="label">Territory revenue, first year</div></div>
+  </div>
+</div>
+
+<section id="about">
+  <div class="wrap">
+    <h2 class="section-title">About</h2>
+    <h3 class="section-head">Making growth boring, in the best way.</h3>
+    <p class="about-body">I'm a zero-to-one systems builder. Twice, I've walked into an environment with no growth function, no playbook, and no tooling — once founding a customer base and community from nothing, once as the sole growth owner for a multi-market portfolio of owner-led businesses — and turned ambiguity into a repeatable system before anyone had to ask.</p>
+    <p class="about-body">I move across channels rather than specializing in one: funnel testing, audience and community building, partnerships, and hands-on execution alongside strategy. I build the CRM, the funnel, and the KPI dashboard myself, then use the data to make real calls on resourcing, pricing, and expansion — no hand-offs, no analytics team required.</p>
+    <p class="about-body">I hold an MBA in Strategic Management &amp; Organizational Leadership, I'm bilingual in English and Spanish, and I'm just as comfortable being the face of a brand — teaching bilingual group fitness classes, building a venue's community in person — as I am behind the dashboard. I'm looking for a small, founder-led team that wants a builder, not a specialist.</p>
+    <div class="tags">
+      <span class="tag">Growth Strategy</span>
+      <span class="tag">Zero-to-One Systems</span>
+      <span class="tag">Funnel &amp; CRO</span>
+      <span class="tag">Customer Acquisition</span>
+      <span class="tag">Community Building</span>
+      <span class="tag">Founder-Facing</span>
+      <span class="tag">Bilingual (EN/ES)</span>
+    </div>
+  </div>
+</section>
+
+<section id="work" class="alt">
+  <div class="wrap">
+    <h2 class="section-title">Case Studies</h2>
+    <h3 class="section-head">Where I've built from zero</h3>
+
+    <div class="case">
+      <div class="case-top">
+        <div class="case-role">Growth &amp; Strategy Manager</div>
+        <div class="case-meta">Apr 2025 – Present</div>
+      </div>
+      <div class="case-org">Clean Suite LLC · Remote</div>
+      <p>Sole growth owner for a multi-market portfolio of owner-led service businesses, reporting directly to the owners — no existing growth team or playbook to inherit.</p>
+      <ul>
+        <li><strong>Centralized scattered growth efforts.</strong> Took ad hoc marketing and sales activity across 3 markets and built it into one repeatable growth function, generating ~$300K/month in combined revenue with 46%, 18%, and 12% growth across the three businesses.</li>
+        <li><strong>Built the infrastructure from zero.</strong> Stood up CRM, marketing automation, communications, and reporting systems where none existed, creating the foundation to test and scale new channels.</li>
+        <li><strong>Ran the funnel like an experiment.</strong> Redesigned the lead-to-close funnel and expanded coverage hours, testing and iterating on what moved the numbers — a 32% lift in lead conversion and 30% revenue growth in a single quarter.</li>
+        <li><strong>Built the metrics layer myself.</strong> Created KPI dashboards across sales, marketing, and operations from scratch, using the data directly to make resourcing, pricing, and expansion calls.</li>
+        <li><strong>Operated with full autonomy.</strong> Identified underperforming areas proactively, built solutions unprompted, and trained the team to sustain them — a 20% lift in operational efficiency.</li>
+      </ul>
+      <div class="case-stats">
+        <span class="chip">$300K/mo revenue</span>
+        <span class="chip">32% conversion lift</span>
+        <span class="chip">20% efficiency gain</span>
+      </div>
+    </div>
+
+    <div class="case">
+      <div class="case-top">
+        <div class="case-role">Co-Founder, Casa Janus — Independent Arts Venue</div>
+        <div class="case-meta">Jul 2022 – Present</div>
+      </div>
+      <div class="case-org">Mérida, Yucatán, MX · Hybrid</div>
+      <p>Founded and operate a seasonal gallery and cultural venue, building a customer base and brand with zero existing infrastructure or team.</p>
+      <ul>
+        <li><strong>Built the customer base from nothing.</strong> Personally drove community engagement, vendor relationships, and local audience growth from a standing start.</li>
+        <li><strong>Built and led a lean, distributed team.</strong> Hired and manage two remote team members across Argentina and Brazil, coordinating execution across time zones — the same scrappy, self-directed mode a fast-moving startup requires.</li>
+        <li><strong>Direct, in-person audience engagement.</strong> Bilingual (English/Spanish) group fitness instructor, teaching live classes to individuals and groups — comfortable being the face of a brand and building rapport directly with an audience.</li>
+      </ul>
+      <div class="case-stats">
+        <span class="chip">Founded &amp; operated solo</span>
+        <span class="chip">Cross-border team of 2</span>
+      </div>
+    </div>
+
+    <div class="case">
+      <div class="case-top">
+        <div class="case-role">Account &amp; Customer Success Management</div>
+        <div class="case-meta">Mar 2018 – Jan 2024</div>
+      </div>
+      <div class="case-org">SHI International Corp. · Hybrid</div>
+      <p>Founding member of SHI's first Microsoft Customer Success team, built in partnership with Microsoft — a small-team territory much like an early-stage startup.</p>
+      <ul>
+        <li><strong>Metrics-driven ownership at scale.</strong> Built a KPI tracker to monitor adoption, expansion, and churn risk across a large account portfolio, driving a 95% average retention rate and identifying a $150K+ new revenue opportunity from scratch.</li>
+        <li><strong>Fast learner across channels and stakeholders.</strong> Captured $35M in territory revenue in the first year of a new role, ramping quickly enough to earn two promotions in 12 months.</li>
+      </ul>
+      <div class="case-stats">
+        <span class="chip">95% retention</span>
+        <span class="chip">$35M year-one revenue</span>
+        <span class="chip">2 promotions in 12 mo</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <h2 class="section-title">Skills</h2>
+    <h3 class="section-head">How I work</h3>
+    <div class="skills-grid">
+      <div class="skill-col">
+        <h4>Growth</h4>
+        <p>Multi-channel growth testing, funnel optimization, customer acquisition, community building, performance analysis.</p>
+      </div>
+      <div class="skill-col">
+        <h4>Tools &amp; Style</h4>
+        <p>Salesforce, HubSpot, Google Workspace, Google Ads, Meta Ads, Zapier, marketing automation, BI dashboarding. Small-team and founder-facing, high autonomy, self-starter.</p>
+      </div>
+      <div class="skill-col">
+        <h4>Audience Engagement</h4>
+        <p>Bilingual (English/Spanish); live audience-facing — community building, group instruction, direct customer engagement.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <h2 class="section-title">Education</h2>
+    <div class="edu-item">
+      <div class="deg">MBA, Strategic Management &amp; Organizational Leadership</div>
+      <div class="sch">St. Edward's University, Austin, TX</div>
+    </div>
+    <div class="edu-item">
+      <div class="deg">B.S., Corporate Communication Studies</div>
+      <div class="sch">The University of Texas at Austin</div>
+    </div>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="wrap">
+    <h3>Let's talk.</h3>
+    <p>Open to remote growth leadership roles at small, founder-led teams — Head of Growth, GTM Lead, or startup executive.</p>
+    <div class="btn-row">
+      <a class="btn btn-primary" href="https://linkedin.com/in/ilsechapa" target="_blank" rel="noopener">Connect on LinkedIn</a>
+    </div>
+    <div class="fine">Ilse Chapa · Remote</div>
+  </div>
+</footer>
+
+</body>
+</html>
