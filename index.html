@@ -3,17 +3,20 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ilse Chapa — Growth & GTM Leader</title>
-<meta name="description" content="Ilse Chapa — Founding Growth Lead. Chaos in. Systems out. Growth & Strategy, GTM, Customer Acquisition.">
+<title>Ilse Chapa — Head of Growth | Sales + Marketing + RevOps</title>
+<meta name="description" content="Ilse Chapa — Head of Growth. Chaos in, systems out. Twice built acquisition systems from zero across Sales, Marketing, and RevOps.">
 <style>
   :root {
-    --ink: #1a1e1c;
-    --ink-soft: #4a524d;
-    --paper: #faf9f6;
-    --paper-alt: #f1efe9;
-    --accent: #2f5d47;
-    --accent-soft: #e4ece7;
-    --line: #ddd9d0;
+    color-scheme: light;
+    --ink: #14201d;
+    --ink-soft: #4d564f;
+    --paper: #f7f5f0;
+    --paper-alt: #eef0e9;
+    --teal: #0e6b5c;
+    --teal-soft: #dcece7;
+    --mandarin: #e8622b;
+    --mandarin-soft: #fbe4d8;
+    --line: #ded9cc;
     --max: 880px;
   }
   * { box-sizing: border-box; }
@@ -26,94 +29,103 @@
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
   }
-  a { color: var(--accent); }
+  a { color: var(--teal); }
   .wrap { max-width: var(--max); margin: 0 auto; padding: 0 28px; }
 
   /* NAV */
   nav {
     position: sticky; top: 0; z-index: 10;
-    background: rgba(250,249,246,0.92);
-    backdrop-filter: blur(6px);ƒ
+    background: rgba(247,245,240,0.92);
+    backdrop-filter: blur(6px);
     border-bottom: 1px solid var(--line);
   }
   nav .wrap { display: flex; justify-content: space-between; align-items: center; padding: 16px 28px; }
   nav .name { font-weight: 700; letter-spacing: 0.02em; font-size: 15px; }
   nav ul { list-style: none; display: flex; gap: 26px; margin: 0; padding: 0; }
   nav a { text-decoration: none; color: var(--ink-soft); font-size: 14px; font-weight: 500; }
-  nav a:hover { color: var(--accent); }
+  nav a:hover { color: var(--mandarin); }
   @media (max-width: 640px) { nav ul { display: none; } }
 
   /* HERO */
   header.hero { padding: 90px 0 70px; }
   header.hero .eyebrow {
     text-transform: uppercase; letter-spacing: 0.14em; font-size: 12px;
-    color: var(--accent); font-weight: 700; margin-bottom: 18px;
+    color: var(--mandarin); font-weight: 700; margin-bottom: 18px;
   }
-  header.hero h1 { font-size: 44px; line-height: 1.15; margin: 0 0 18px; letter-spacing: -0.01em; }
-  header.hero p.lede { font-size: 19px; color: var(--ink-soft); max-width: 620px; margin: 0 0 34px; }
+  header.hero h1 { font-size: 46px; line-height: 1.12; margin: 0 0 10px; letter-spacing: -0.01em; }
+  header.hero .role-line {
+    font-size: 15px; font-weight: 700; color: var(--teal); letter-spacing: 0.02em;
+    margin: 0 0 22px;
+  }
+  header.hero .role-line span.sep { color: var(--line); margin: 0 8px; }
+  header.hero p.lede { font-size: 18px; color: var(--ink-soft); max-width: 640px; margin: 0 0 34px; }
   .btn-row { display: flex; gap: 14px; flex-wrap: wrap; }
   .btn {
     display: inline-block; padding: 12px 22px; border-radius: 6px;
-    text-decoration: none; font-size: 14px; font-weight: 600; transition: transform 0.15s ease;
+    text-decoration: none; font-size: 14px; font-weight: 700; transition: transform 0.15s ease;
   }
   .btn:hover { transform: translateY(-1px); }
-  .btn-primary { background: var(--accent); color: #fff; }
-  .btn-secondary { background: transparent; color: var(--ink); border: 1px solid var(--line); }
+  .btn-primary { background: var(--mandarin); color: #fff; }
+  .btn-secondary { background: transparent; color: var(--ink); border: 1.5px solid var(--teal); }
 
-  /* STATS STRIP */
+  /* STATS / BANNER */
   .stats {
-    background: var(--accent-soft); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);
-    padding: 36px 0;
+    background: var(--teal); padding: 40px 0;
   }
-  .stats .wrap { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; text-align: center; }
-  .stat .num { font-size: 26px; font-weight: 700; color: var(--accent); }
-  .stat .label { font-size: 12.5px; color: var(--ink-soft); margin-top: 4px; }
-  @media (max-width: 640px) { .stats .wrap { grid-template-columns: repeat(2, 1fr); } }
+  .stats .wrap { text-align: center; }
+  .banner-stat { font-size: 25px; font-weight: 800; color: #fff; letter-spacing: -0.01em; }
+  .banner-stat .accent-word { color: var(--mandarin-soft); }
+  @media (max-width: 640px) { .banner-stat { font-size: 19px; } }
 
   section { padding: 70px 0; }
   section.alt { background: var(--paper-alt); }
   h2.section-title {
     font-size: 13px; text-transform: uppercase; letter-spacing: 0.14em;
-    color: var(--accent); font-weight: 700; margin: 0 0 12px;
+    color: var(--mandarin); font-weight: 800; margin: 0 0 12px;
   }
   h3.section-head { font-size: 28px; margin: 0 0 26px; letter-spacing: -0.01em; }
   p.about-body { font-size: 17px; color: var(--ink-soft); max-width: 720px; }
   p.about-body + p.about-body { margin-top: 16px; }
+  p.about-body strong { color: var(--ink); }
 
   .tags { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 26px; }
-  .tag { background: #fff; border: 1px solid var(--line); padding: 7px 14px; border-radius: 999px; font-size: 13px; color: var(--ink-soft); }
+  .tag { background: #fff; border: 1px solid var(--teal-soft); padding: 7px 14px; border-radius: 999px; font-size: 13px; color: var(--teal); font-weight: 600; }
 
   /* CASE STUDIES */
-  .case { border: 1px solid var(--line); background: #fff; border-radius: 12px; padding: 34px; margin-bottom: 28px; }
+  .case { border: 1px solid var(--line); border-top: 3px solid var(--teal); background: #fff; border-radius: 12px; padding: 34px; margin-bottom: 28px; }
   .case-top { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 8px; margin-bottom: 6px; }
   .case-role { font-size: 20px; font-weight: 700; }
   .case-meta { font-size: 13px; color: var(--ink-soft); }
-  .case-org { font-size: 14px; color: var(--accent); font-weight: 600; margin-bottom: 18px; }
+  .case-org { font-size: 14px; color: var(--mandarin); font-weight: 700; margin-bottom: 18px; }
   .case p { color: var(--ink-soft); font-size: 15.5px; margin: 0 0 10px; }
   .case ul { margin: 14px 0 0; padding-left: 20px; }
   .case li { color: var(--ink-soft); font-size: 15.5px; margin-bottom: 9px; }
   .case li strong { color: var(--ink); }
   .case-stats { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
-  .chip { background: var(--accent-soft); color: var(--accent); font-weight: 700; font-size: 13px; padding: 8px 14px; border-radius: 8px; }
+  .chip { background: var(--teal-soft); color: var(--teal); font-weight: 800; font-size: 13px; padding: 8px 14px; border-radius: 8px; }
+  .chip.pop { background: var(--mandarin-soft); color: var(--mandarin); }
 
   /* SKILLS */
-  .skills-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
-  .skill-col h4 { font-size: 14px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--ink); margin: 0 0 12px; }
-  .skill-col p { color: var(--ink-soft); font-size: 14.5px; margin: 0; }
-  @media (max-width: 700px) { .skills-grid { grid-template-columns: 1fr; } }
+  .skills-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+  .skill-col { background: #fff; border: 1px solid var(--line); border-radius: 10px; padding: 20px; }
+  .skill-col h4 { font-size: 13px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--mandarin); font-weight: 800; margin: 0 0 12px; }
+  .skill-col p { color: var(--ink-soft); font-size: 14px; margin: 0; }
+  @media (max-width: 900px) { .skills-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 560px) { .skills-grid { grid-template-columns: 1fr; } }
 
   /* EDUCATION */
   .edu-item { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 6px; padding: 16px 0; border-bottom: 1px solid var(--line); }
   .edu-item:last-child { border-bottom: none; }
-  .edu-item .deg { font-weight: 600; }
+  .edu-item .deg { font-weight: 700; }
   .edu-item .sch { color: var(--ink-soft); font-size: 14.5px; }
 
   /* CONTACT / FOOTER */
-  footer { padding: 70px 0 50px; text-align: center; }
-  footer h3 { font-size: 30px; margin: 0 0 14px; }
-  footer p { color: var(--ink-soft); font-size: 16px; max-width: 480px; margin: 0 auto 30px; }
+  footer { padding: 70px 0 50px; text-align: center; background: var(--teal); }
+  footer h3 { font-size: 30px; margin: 0 0 14px; color: #fff; }
+  footer p { color: #dff0eb; font-size: 16px; max-width: 480px; margin: 0 auto 30px; }
   footer .btn-row { justify-content: center; }
-  .fine { margin-top: 50px; font-size: 12.5px; color: #9a978f; }
+  footer .btn-secondary { border-color: #fff; color: #fff; }
+  .fine { margin-top: 50px; font-size: 12.5px; color: #a6cfc5; }
 </style>
 </head>
 <body>
@@ -132,9 +144,10 @@
 
 <header class="hero">
   <div class="wrap">
-    <div class="eyebrow">Founding Growth Lead</div>
-    <h1>I build growth systems from zero — twice, and counting.</h1>
-    <p class="lede">Versatile growth operator who has built acquisition systems from scratch on lean teams with no playbook to inherit — once as a founder, once as the sole growth owner for a multi-market business portfolio. Looking to bring that same versatility to a small, founder-led team.</p>
+    <div class="eyebrow">Head of Growth</div>
+    <h1>Chaos in. Systems out.</h1>
+    <div class="role-line">Sales <span class="sep">+</span> Marketing <span class="sep">+</span> RevOps</div>
+    <p class="lede">Versatile growth operator who has <strong>twice built acquisition systems from zero</strong> on lean teams with no playbook to inherit — once as a founder, once as the sole growth owner for a multi-market business portfolio. Methodical about turning ambiguity into a repeatable system: the CRM, the funnel, and the KPI dashboard, built before anyone has to ask.</p>
     <div class="btn-row">
       <a class="btn btn-primary" href="#work">See the work</a>
       <a class="btn btn-secondary" href="https://linkedin.com/in/ilsechapa" target="_blank" rel="noopener">Connect on LinkedIn</a>
@@ -144,26 +157,24 @@
 
 <div class="stats">
   <div class="wrap">
-    <div class="stat"><div class="num">$300K/mo</div><div class="label">Revenue built from scratch, Clean Suite</div></div>
-    <div class="stat"><div class="num">32%</div><div class="label">Lift in lead conversion, one quarter</div></div>
-    <div class="stat"><div class="num">95%</div><div class="label">Average account retention, SHI</div></div>
-    <div class="stat"><div class="num">$35M</div><div class="label">Territory revenue, first year</div></div>
+    <div class="banner-stat">$300K/mo in combined revenue — built with <span class="accent-word">zero</span> playbook.</div>
   </div>
 </div>
 
 <section id="about">
   <div class="wrap">
     <h2 class="section-title">About</h2>
-    <h3 class="section-head">Growth in the best way.</h3>
-    <p class="about-body">I'm a zero-to-one systems builder. Twice, I've walked into an environment with no growth function, no playbook, and no tooling — once founding a customer base and community from nothing, once as the sole growth owner for a multi-market portfolio of owner-led businesses — and turned ambiguity into a repeatable system before anyone had to ask.</p>
-    <p class="about-body">I move across channels rather than specializing in one: funnel testing, audience and community building, partnerships, and hands-on execution alongside strategy. I build the CRM, the funnel, and the KPI dashboard myself, then use the data to make real calls on resourcing, pricing, and expansion — no hand-offs, no analytics team required.</p>
-    <p class="about-body">I hold an MBA in Strategic Management &amp; Organizational Leadership, I'm bilingual in English and Spanish, and I'm just as comfortable being the face of a brand — teaching bilingual group fitness classes, building a venue's community in person — as I am behind the dashboard. I'm looking for a small, founder-led team that wants a builder, not a specialist.</p>
+    <h3 class="section-head">Making growth boring, in the best way.</h3>
+    <p class="about-body"><strong>A zero-to-one systems builder.</strong> Twice, I've walked into an environment with no growth function, no playbook, and no tooling — once founding a customer base and community from nothing, once as the sole growth owner for a multi-market portfolio of owner-led businesses — and turned ambiguity into a repeatable system before anyone had to ask.</p>
+    <p class="about-body">I move across <strong>Sales, Marketing, and RevOps</strong> rather than specializing in one lane: funnel testing, audience and community building, partnerships, and hands-on execution alongside strategy. I build the CRM, the funnel, and the KPI dashboard myself, then use the data to make real calls on resourcing, pricing, and expansion — no hand-offs, no analytics team required.</p>
+    <p class="about-body">I hold an <strong>MBA in Strategic Management &amp; Organizational Leadership</strong>, I'm bilingual in English and Spanish, and I'm just as comfortable being the face of a brand — teaching bilingual group fitness classes, building a venue's community in person — as I am behind the dashboard. I'm looking for a small, founder-led team that wants a builder, not a specialist.</p>
     <div class="tags">
-      <span class="tag">Growth Strategy</span>
+      <span class="tag">Head of Growth</span>
+      <span class="tag">GTM Strategy</span>
       <span class="tag">Zero-to-One Systems</span>
+      <span class="tag">RevOps</span>
       <span class="tag">Funnel &amp; CRO</span>
       <span class="tag">Customer Acquisition</span>
-      <span class="tag">Community Building</span>
       <span class="tag">Founder-Facing</span>
       <span class="tag">Bilingual (EN/ES)</span>
     </div>
@@ -183,15 +194,15 @@
       <div class="case-org">Clean Suite LLC · Remote</div>
       <p>Sole growth owner for a multi-market portfolio of owner-led service businesses, reporting directly to the owners — no existing growth team or playbook to inherit.</p>
       <ul>
-        <li><strong>Centralized scattered growth efforts.</strong> Took ad hoc marketing and sales activity across 3 markets and built it into one repeatable growth function, generating ~$300K/month in combined revenue with 46%, 18%, and 12% growth across the three businesses.</li>
-        <li><strong>Built the infrastructure from zero.</strong> Stood up CRM, marketing automation, communications, and reporting systems where none existed, creating the foundation to test and scale new channels.</li>
+        <li><strong>Centralized scattered growth efforts.</strong> Took ad hoc marketing and sales activity across 3 markets and engineered one repeatable growth function, generating ~$300K/month in combined revenue with 46%, 18%, and 12% growth across the three businesses.</li>
+        <li><strong>Built the infrastructure from zero.</strong> Stood up CRM, marketing automation, communications, and reporting systems where none existed — RevOps built from a blank slate — creating the foundation to test and scale new channels.</li>
         <li><strong>Ran the funnel like an experiment.</strong> Redesigned the lead-to-close funnel and expanded coverage hours, testing and iterating on what moved the numbers — a 32% lift in lead conversion and 30% revenue growth in a single quarter.</li>
         <li><strong>Built the metrics layer myself.</strong> Created KPI dashboards across sales, marketing, and operations from scratch, using the data directly to make resourcing, pricing, and expansion calls.</li>
         <li><strong>Operated with full autonomy.</strong> Identified underperforming areas proactively, built solutions unprompted, and trained the team to sustain them — a 20% lift in operational efficiency.</li>
       </ul>
       <div class="case-stats">
         <span class="chip">$300K/mo revenue</span>
-        <span class="chip">32% conversion lift</span>
+        <span class="chip pop">32% conversion lift</span>
         <span class="chip">20% efficiency gain</span>
       </div>
     </div>
@@ -210,7 +221,7 @@
       </ul>
       <div class="case-stats">
         <span class="chip">Founded &amp; operated solo</span>
-        <span class="chip">Cross-border team of 2</span>
+        <span class="chip pop">Cross-border team of 2</span>
       </div>
     </div>
 
@@ -227,7 +238,7 @@
       </ul>
       <div class="case-stats">
         <span class="chip">95% retention</span>
-        <span class="chip">$35M year-one revenue</span>
+        <span class="chip pop">$35M year-one revenue</span>
         <span class="chip">2 promotions in 12 mo</span>
       </div>
     </div>
@@ -238,19 +249,23 @@
 <section id="skills">
   <div class="wrap">
     <h2 class="section-title">Skills</h2>
-    <h3 class="section-head">How I work</h3>
+    <h3 class="section-head">Sales + Marketing + RevOps</h3>
     <div class="skills-grid">
       <div class="skill-col">
-        <h4>Growth</h4>
+        <h4>Growth &amp; GTM</h4>
         <p>Multi-channel growth testing, funnel optimization, customer acquisition, community building, performance analysis.</p>
       </div>
       <div class="skill-col">
-        <h4>Tools &amp; Style</h4>
-        <p>Salesforce, HubSpot, Google Workspace, Google Ads, Meta Ads, Zapier, marketing automation, BI dashboarding. Small-team and founder-facing, high autonomy, self-starter.</p>
+        <h4>RevOps &amp; Systems</h4>
+        <p>CRM &amp; marketing automation build-out, KPI/BI dashboarding, reporting infrastructure built from zero.</p>
       </div>
       <div class="skill-col">
-        <h4>Audience Engagement</h4>
-        <p>Bilingual (English/Spanish); live audience-facing — community building, group instruction, direct customer engagement.</p>
+        <h4>Sales &amp; Accounts</h4>
+        <p>Territory ownership, account retention &amp; expansion, customer success — $35M+ revenue captured in a single year.</p>
+      </div>
+      <div class="skill-col">
+        <h4>Marketing &amp; Tools</h4>
+        <p>Salesforce, HubSpot, Google Workspace, Google Ads, Meta Ads, Zapier. Founder-facing, high autonomy, self-starter. Bilingual (English/Spanish).</p>
       </div>
     </div>
   </div>
